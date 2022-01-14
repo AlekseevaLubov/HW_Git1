@@ -1,0 +1,297 @@
+TXT
+
+1.Создать внешний репозиторий c названием TXT.
+На Github кликнуть Create repository. Ввести Repository name "TXT". 
+Add a README file. Кликнуть Create repository.
+
+2.Клонировать репозиторий TXT на локальный компьютер.
+Копируем ссылку на репозиторий (code-https-copy)
+В Gitbash пишем команду: git clone https://github.com/AlekseevaLubov/TXT.git
+
+3.Внутри локального TXT создать файл “new.txt”.
+Заходим внутрь папки TXT: cd TXT
+Создаем файл new.txt: cat > new.txt 
+
+4.Добавить файл под гит.
+git add .
+
+5.Закоммитить файл.
+git commit -m "create new.txt"
+
+6.Отправить файл на внешний GitHub репозиторий.
+git push
+
+7.Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+cat > new.txt
+Name: Luba
+Age: 34
+Pets: 1
+Desired Salary: 1000
+
+8.Отправить изменения на внешний репозиторий.
+git add .
+git commit -m "changes in new.txt"
+git push
+
+9.Создать файл preferences.txt
+touch preferences.txt
+
+10.В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+vim preferences.txt
+favorite movie: home alone
+favorite series: Breaking Bad
+favorite food: cheese
+favorite season: summer
+country to visit: USA
+
+11.Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+cat > sklls.txt
+  1.Basic theory
+  2.Client-server architecture
+  3.HTTP
+  4.JSON, XML
+  5.Postman
+  6.Work with logs
+  7.Charles, Fiddler
+  8.Dev Tools (Chrome, FireFox)
+  9.VPN
+  12.Mobile testing
+  13.Terminal Linux
+  14.bash scripting
+  15.SQL
+  16.Postgres
+  17.Redis
+  18.Jmeter
+  19.Scrum
+  20.Python (basics)
+
+12.Сделать коммит в одну строку.
+git add . & git commit -m "add preferences.txt and sklls.txt"
+
+13.Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+14.На веб интерфейсе создать файл bug_report.txt.
+Создаем на Github файл "bug_report.txt" 
+Add file-Create new file
+
+15.Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+В поле Commit new file пишем "Create bug_report".
+Выбираем Commit directly to the main branch.
+Жмем Commit new file.
+
+16.На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+Захожу в файл и кликаю edit this file.
+
+Title: The buy button does not work
+Priority: High
+Severity: Blocker
+Steps to reproduce: 1) open the catalog. 2)put the product in the basket. 3) go to the basket. 4) click "order".
+Expected result: It was made the transition to the order payment page.
+Actual result: the button "order" doesn't work.
+
+17.Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Заполняю поле commit changes "Add bug_report  ("buy" button does not work)".
+Кликаю Commit changes.
+
+18.Синхронизировать внешний и локальный репозиторий TXT
+git fetch - сравнение состояния локального и внешнего репозитория
+git pull - качаем состояние внешнего репозитория на локальный компьютер
+git push - пушим изменения
+
+
+JSON
+19.Создать внешний репозиторий c названием JSON.
+На Github кликнуть Create repository. Ввести Repository name "JSON". 
+Add a README file. Кликнуть Create repository.
+
+20.Клонировать репозиторий JSON на локальный компьютер.
+Копируем ссылку на репозиторий (code-https-copy)
+В Gitbash пишем команду:git clone https://github.com/AlekseevaLubov/JSON.git
+
+21.Внутри локального JSON создать файл “new.json”.
+Заходим в папку JSON: cd JSON
+Создаем файл “new.json”: touch new.json
+
+22.Добавить файл под гит.
+git add .
+
+23.Закоммитить файл.
+git commit -m "create new.json"
+
+24.Отправить файл на внешний GitHub репозиторий.
+git push
+
+25.Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json - заходим в редактор vim
+{"Name": "Luba",
+"Age": 34,
+"Pets": 1,
+"Desired salary": 1000
+}
+
+26.Отправить изменения на внешний репозиторий.
+git add .
+git commit -m "add changes in new.json"
+git push
+
+27.Создать файл preferences.json
+touch preferences.json
+
+28.В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim preferences.json - входим в редактор vim
+
+{"favorite movie": "home alone",
+"favorite series": "breaking bad",
+"favorite food": "cheese",
+"favorite season": "summer",
+"country to visit": "USA"
+}
+
+29.Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+touch sklls.json
+vim sklls.json
+{"Skill 1": "basic theory",
+"Skill 2": "Client-server architecture",
+"Skill 3": "HTTP",
+"Skill 4": "JSON, XML",
+"Skill 5": "Work with logs",
+"Skill 6": "Charles, Fidler",
+"Skill 7": "Dev Tools"
+"Another skills": "VPN, Mobile testing, Terminal Linux, Bash scripting, SQL, Postgres, Redis, Jmeter, Scrum, Python"
+}
+
+30.Отправить сразу 2 файла на внешний репозиторий.
+git add . & git commit -m "add preferences.json and sklls.json"
+git push
+
+31.На веб интерфейсе создать файл bug_report.json.
+Создаем на Github файл "bug_report.json" 
+Add file-Create new file
+
+32.Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+В поле Commit new file пишем "Create bug_report.json".
+Выбираем Commit directly to the main branch.
+Жмем Commit new file.
+
+33.На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+Захожу в файл и кликаю edit this file.
+
+{"Title": "The buy button does not work",
+"Priority": "High",
+"Severity": "Blocker",
+"Steps to reproduce": "1) open the catalog. 2)put the product in the basket. 3) go to the basket. 4) click 'order'",
+"Expected result": "It was made the transition to the order payment page",
+"Actual result": "the button 'order' doesn't work"
+}
+
+34.Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Заполняю поле commit changes "Update bug_report.json".
+Кликаю Commit changes.
+
+35.Синхронизировать внешний и локальный репозиторий JSON
+git fetch - сравнение состояния локального и внешнего репозитория
+git pull - качаем состояние внешнего репозитория на локальный компьютер
+git push - пушим изменения
+
+
+XML
+36.Создать внешний репозиторий c названием XML.
+На Github кликнуть Create repository. Ввести Repository name "XML". 
+Add a README file. Кликнуть Create repository.
+
+37.Клонировать репозиторий XML на локальный компьютер.
+Копируем ссылку на репозиторий (code-https-copy)
+В Gitbash пишем команду: git clone https://github.com/AlekseevaLubov/XML.git
+
+38.Внутри локального XML создать файл “new.xml”.
+cd XML - заходим в папку XML
+touch new.xml - создаем файл new.xml
+
+39.Добавить файл под гит.
+git add .
+
+40.Закоммитить файл.
+git commit -m "create new.xml"
+
+41.Отправить файл на внешний GitHub репозиторий.
+git push
+
+42.Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+vim new.xml - заходим в редактор vim
+<new>
+	<Name>Luba</Name>
+	<Age>34</Age>
+	<Pets>1</Pets>
+	<Desired_Salary>1000</Desired_salary" 
+</new>
+
+43.Отправить изменения на внешний репозиторий.
+git add .
+git commit -m "changes in new.xml"
+git push
+
+44.Создать файл preferences.xml
+cat > preferences.xml
+45.В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+vim preferences.xml - заходим в редактор vim
+<preferences>
+	<favorite_movie>home_alone</favorite_movie>
+	<favorite_series>Breaking_Bad</favorite_series>
+	<favorite_food>cheese</favorite_food>
+	<favorite_season>summer</favorite_season>
+	<country_to_visit>USA</country_to_visit>
+</preferences>
+
+46.Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+touch sklls.xml
+vim sklls.xml
+<sklls>
+	<1>Basic_theory</1>
+	<2>HTTP</2>
+	<3>HTTP</3>
+	<4>Postman</4>
+	<5>Dev_tools</5>
+	<6>Mobile_testing</6>
+	<7>Terminal_Linux</7>
+	<8>SQL</8>
+	<9>bash_scripting</9>
+	<10>Charles_Fiddler</10>
+	<11>others</11>
+</sklls>
+
+47.Сделать коммит в одну строку.
+git add . & git commit -m "add preferences.xml and sklls.xml"
+
+48.Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+49.На веб интерфейсе создать файл bug_report.xml.
+Создаем на Github файл "bug_report.xml" 
+Add file-Create new file
+
+50.Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+В поле Commit new file пишем "Create bug_report.xml".
+Выбираем Commit directly to the main branch.
+Жмем Commit new file.
+
+51.На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+Захожу в файл и кликаю edit this file.
+
+<bug_report>
+  <Title>The buy button does not work</Title>
+  <Priority>High</Priority>
+  <Severity>Blocker</Severity>
+  <Steps to reproduce>1) open the catalog. 2)put the product in the basket. 3) go to the basket. 4) click "order"</Steps to reproduce>
+  <Expected result>It was made the transition to the order payment page</Expected result>
+  <Actual result>the button "order" doesn't work</Actual result>
+</bug_report>
+
+52.Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Заполняю поле commit changes "Update bug_report.xml".
+Кликаю Commit changes.
+
+53.Синхронизировать внешний и локальный репозиторий XML
+git fetch - сравнение состояния локального и внешнего репозитория
+git pull - качаем состояние внешнего репозитория на локальный компьютер
+git push - пушим изменения
